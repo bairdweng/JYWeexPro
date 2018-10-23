@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: JYWeexBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.url = JYJsFileManage.sing.getFullPath(fileName: "HelloWorld")
+        self.refreshWeex()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

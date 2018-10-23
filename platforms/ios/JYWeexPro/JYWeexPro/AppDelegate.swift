@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import WeexSDK
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        WXAppConfiguration.setAppGroup("")
+        WXAppConfiguration.setAppName("")
+        WXAppConfiguration.setAppVersion("1.0")
+        WXSDKEngine.initSDKEnvironment()
+        
         return true
     }
 

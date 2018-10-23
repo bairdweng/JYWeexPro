@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99745B29217F1844000DA362 /* JYWeexBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99745B28217F1844000DA362 /* JYWeexBaseViewController.swift */; };
+		99745B2F217F1E6C000DA362 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 99745B2E217F1E6C000DA362 /* www */; };
+		99745B33217F20A9000DA362 /* JYJsFileManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99745B32217F20A9000DA362 /* JYJsFileManage.swift */; };
 		99C4E9EE217E2B4500047E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4E9ED217E2B4500047E2B /* AppDelegate.swift */; };
 		99C4E9F0217E2B4500047E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4E9EF217E2B4500047E2B /* ViewController.swift */; };
 		99C4E9F3217E2B4500047E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C4E9F1217E2B4500047E2B /* Main.storyboard */; };
 		99C4E9F5217E2B4700047E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C4E9F4217E2B4700047E2B /* Assets.xcassets */; };
 		99C4E9F8217E2B4700047E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C4E9F6217E2B4700047E2B /* LaunchScreen.storyboard */; };
+		F08E16607850BA250317BCD3 /* libPods-JYWeexPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23437D0395677F96661EAD71 /* libPods-JYWeexPro.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23437D0395677F96661EAD71 /* libPods-JYWeexPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JYWeexPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D130294F5BD0308E75FB1C /* Pods-JYWeexPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYWeexPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYWeexPro/Pods-JYWeexPro.release.xcconfig"; sourceTree = "<group>"; };
+		88DB67C070D13BC7B3126736 /* Pods-JYWeexPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYWeexPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYWeexPro/Pods-JYWeexPro.debug.xcconfig"; sourceTree = "<group>"; };
+		99745B28217F1844000DA362 /* JYWeexBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYWeexBaseViewController.swift; sourceTree = "<group>"; };
+		99745B2E217F1E6C000DA362 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		99745B32217F20A9000DA362 /* JYJsFileManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYJsFileManage.swift; sourceTree = "<group>"; };
 		99C4E9EA217E2B4500047E2B /* JYWeexPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYWeexPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C4E9ED217E2B4500047E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C4E9EF217E2B4500047E2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +39,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08E16607850BA250317BCD3 /* libPods-JYWeexPro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05E8EAD0391E10D3A9E69F44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88DB67C070D13BC7B3126736 /* Pods-JYWeexPro.debug.xcconfig */,
+				85D130294F5BD0308E75FB1C /* Pods-JYWeexPro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D19760A9BC24C08EEE34153 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23437D0395677F96661EAD71 /* libPods-JYWeexPro.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99745B27217F182C000DA362 /* JYBase */ = {
+			isa = PBXGroup;
+			children = (
+				99745B28217F1844000DA362 /* JYWeexBaseViewController.swift */,
+			);
+			path = JYBase;
+			sourceTree = "<group>";
+		};
+		99745B2A217F1DD8000DA362 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				99745B2E217F1E6C000DA362 /* www */,
+				99C4E9F9217E2B4700047E2B /* Info.plist */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		99745B30217F2066000DA362 /* Weex */ = {
+			isa = PBXGroup;
+			children = (
+				99745B31217F207A000DA362 /* JYJsFileManage */,
+				99745B27217F182C000DA362 /* JYBase */,
+			);
+			path = Weex;
+			sourceTree = "<group>";
+		};
+		99745B31217F207A000DA362 /* JYJsFileManage */ = {
+			isa = PBXGroup;
+			children = (
+				99745B32217F20A9000DA362 /* JYJsFileManage.swift */,
+			);
+			path = JYJsFileManage;
+			sourceTree = "<group>";
+		};
 		99C4E9E1217E2B4500047E2B = {
 			isa = PBXGroup;
 			children = (
 				99C4E9EC217E2B4500047E2B /* JYWeexPro */,
 				99C4E9EB217E2B4500047E2B /* Products */,
+				05E8EAD0391E10D3A9E69F44 /* Pods */,
+				7D19760A9BC24C08EEE34153 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +118,13 @@
 		99C4E9EC217E2B4500047E2B /* JYWeexPro */ = {
 			isa = PBXGroup;
 			children = (
+				99745B30217F2066000DA362 /* Weex */,
+				99745B2A217F1DD8000DA362 /* Supporting File */,
 				99C4E9ED217E2B4500047E2B /* AppDelegate.swift */,
 				99C4E9EF217E2B4500047E2B /* ViewController.swift */,
 				99C4E9F1217E2B4500047E2B /* Main.storyboard */,
 				99C4E9F4217E2B4700047E2B /* Assets.xcassets */,
 				99C4E9F6217E2B4700047E2B /* LaunchScreen.storyboard */,
-				99C4E9F9217E2B4700047E2B /* Info.plist */,
 			);
 			path = JYWeexPro;
 			sourceTree = "<group>";
@@ -71,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99C4E9FC217E2B4700047E2B /* Build configuration list for PBXNativeTarget "JYWeexPro" */;
 			buildPhases = (
+				7AEDEA26D9C7DAD401BDC397 /* [CP] Check Pods Manifest.lock */,
 				99C4E9E6217E2B4500047E2B /* Sources */,
 				99C4E9E7217E2B4500047E2B /* Frameworks */,
 				99C4E9E8217E2B4500047E2B /* Resources */,
+				CA8F011D8D252C1C5D4E0153 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99745B2F217F1E6C000DA362 /* www in Resources */,
 				99C4E9F8217E2B4700047E2B /* LaunchScreen.storyboard in Resources */,
 				99C4E9F5217E2B4700047E2B /* Assets.xcassets in Resources */,
 				99C4E9F3217E2B4500047E2B /* Main.storyboard in Resources */,
@@ -130,13 +198,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7AEDEA26D9C7DAD401BDC397 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JYWeexPro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA8F011D8D252C1C5D4E0153 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JYWeexPro/Pods-JYWeexPro-resources.sh",
+				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
+				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/native-bundle-main.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYWeexPro/Pods-JYWeexPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99C4E9E6217E2B4500047E2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99745B33217F20A9000DA362 /* JYJsFileManage.swift in Sources */,
 				99C4E9F0217E2B4500047E2B /* ViewController.swift in Sources */,
 				99C4E9EE217E2B4500047E2B /* AppDelegate.swift in Sources */,
+				99745B29217F1844000DA362 /* JYWeexBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +391,12 @@
 		};
 		99C4E9FD217E2B4700047E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DB67C070D13BC7B3126736 /* Pods-JYWeexPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6747MGQ837;
-				INFOPLIST_FILE = JYWeexPro/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JYWeexPro/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +410,12 @@
 		};
 		99C4E9FE217E2B4700047E2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85D130294F5BD0308E75FB1C /* Pods-JYWeexPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6747MGQ837;
-				INFOPLIST_FILE = JYWeexPro/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JYWeexPro/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

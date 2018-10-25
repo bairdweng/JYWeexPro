@@ -5,4 +5,8 @@ use_modular_headers!
 
 target 'JYWeexPro' do
    pod 'WeexSDK'
+   pod 'AMap2DMap'
+   pod 'SnapKit'
+   pod 'AMapSearch'
+   pod 'AMapLocation'
 end

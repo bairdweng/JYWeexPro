@@ -1,0 +1,6 @@
+module Pods_JYWeexPro {
+  umbrella header "Pods-JYWeexPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

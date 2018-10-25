@@ -8,6 +8,7 @@
 
 import UIKit
 import WeexSDK
+import AMapFoundationKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         WXAppConfiguration.setAppName("")
         WXAppConfiguration.setAppVersion("1.0")
         WXSDKEngine.initSDKEnvironment()
+        AMapServices.shared()?.apiKey = "66ecbc71273de3279ae5e3c25feb5830"
         
         return true
     }

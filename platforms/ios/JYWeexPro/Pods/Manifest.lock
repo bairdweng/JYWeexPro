@@ -1,16 +1,38 @@
 PODS:
+  - AMap2DMap (5.6.1):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.5.5)
+  - AMapLocation (2.6.1):
+    - AMapFoundation (~> 1.4)
+  - AMapSearch (6.5.0):
+    - AMapFoundation (~> 1.4)
+  - SnapKit (4.2.0)
   - WeexSDK (0.18.0.3)
 
 DEPENDENCIES:
+  - AMap2DMap
+  - AMapLocation
+  - AMapSearch
+  - SnapKit
   - WeexSDK
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AMap2DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
+    - SnapKit
     - WeexSDK
 
 SPEC CHECKSUMS:
+  AMap2DMap: cac76bc057de18a1641f34df6b50bf5bc6b23571
+  AMapFoundation: 652bd70ba579f48a98bdf0c74d6e62a89a06ca58
+  AMapLocation: cf024b53dc03663efb4ea4bcce27d4cce58bb97a
+  AMapSearch: c22d8c98e04aad30615834e567781ec1367c4f36
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   WeexSDK: 173541f2d0042664168b305952398145c0c6039c
 
-PODFILE CHECKSUM: 81462196b2b4cd0a7c10b56c2ec03fb937cfec3b
+PODFILE CHECKSUM: e2142a3678d580b45c188e1afa286103acacfe76
 
 COCOAPODS: 1.5.3

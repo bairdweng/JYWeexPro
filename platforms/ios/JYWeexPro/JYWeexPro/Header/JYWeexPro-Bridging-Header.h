@@ -6,5 +6,8 @@
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <MAMapKit/MAMapKit.h>
 #import <AMapLocationKit/AMapLocationKit.h>
-#import "JYSDK.h"
+#import <ATSDK/ATManager.h>
+#import <ATSDK/ATPluginProtocol.h>
+#import "JYScanPlugin.h"
+
 

@@ -4,11 +4,16 @@ inhibit_all_warnings!
 use_modular_headers!
 
 target 'JYWeexPro' do
-    pod 'WeexSDK'
     pod 'AMap2DMap'
     pod 'AMapSearch'
     pod 'AMapLocation'
     pod 'SnapKit'
-    pod 'ATSDK-Weex'
+    # 浮标
+    pod 'ATSDK'
+    # weex SDK
+    pod 'WeexSDK'
+    # weex调试
     pod 'WXDevtool'
+    # 二维码扫描
+    pod 'swiftScan'
 end

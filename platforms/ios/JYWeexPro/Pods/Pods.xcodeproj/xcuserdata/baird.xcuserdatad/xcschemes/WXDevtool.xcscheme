@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31050638CF9E73BDE103231199981CB6"
+               BlueprintIdentifier = "773DF1FF110C6A93D5C381162F76F717"
                BlueprintName = "WXDevtool"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libWXDevtool.a">

@@ -93,9 +93,9 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/AMap2DMap/MAMapKit.framework/AMap.bundle"
-  install_resource "${PODS_ROOT}/ATSDK-Weex/ATSDK.framework/Versions/A/Resources/ATSDK.bundle"
-  install_resource "${PODS_ROOT}/ATSDK-Weex/ATSDK.framework/Versions/A/Resources/en.lproj"
-  install_resource "${PODS_ROOT}/ATSDK-Weex/ATSDK.framework/Versions/A/Resources/zh-Hans.lproj"
+  install_resource "${PODS_ROOT}/ATSDK/ATSDK.framework/Versions/A/Resources/ATSDK.bundle"
+  install_resource "${PODS_ROOT}/ATSDK/ATSDK.framework/Versions/A/Resources/en.lproj"
+  install_resource "${PODS_ROOT}/ATSDK/ATSDK.framework/Versions/A/Resources/zh-Hans.lproj"
   install_resource "${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js"
   install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-main-jsfm.js"
   install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-polyfill.js"
@@ -104,9 +104,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/AMap2DMap/MAMapKit.framework/AMap.bundle"
-  install_resource "${PODS_ROOT}/ATSDK-Weex/ATSDK.framework/Versions/A/Resources/ATSDK.bundle"
-  install_resource "${PODS_ROOT}/ATSDK-Weex/ATSDK.framework/Versions/A/Resources/en.lproj"
-  install_resource "${PODS_ROOT}/ATSDK-Weex/ATSDK.framework/Versions/A/Resources/zh-Hans.lproj"
+  install_resource "${PODS_ROOT}/ATSDK/ATSDK.framework/Versions/A/Resources/ATSDK.bundle"
+  install_resource "${PODS_ROOT}/ATSDK/ATSDK.framework/Versions/A/Resources/en.lproj"
+  install_resource "${PODS_ROOT}/ATSDK/ATSDK.framework/Versions/A/Resources/zh-Hans.lproj"
   install_resource "${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js"
   install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-main-jsfm.js"
   install_resource "${PODS_ROOT}/WeexSDK/pre-build/weex-polyfill.js"

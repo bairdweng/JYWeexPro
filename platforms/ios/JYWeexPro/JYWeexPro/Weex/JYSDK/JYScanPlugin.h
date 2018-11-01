@@ -1,5 +1,5 @@
 //
-//  JYSDK.h
+//  JYScanPlugin.h
 //  JYWeexPro
 //
 //  Created by Baird-weng on 2018/11/1.
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JYSDK : NSObject
-+ (void)atAddPlugin;
+@interface JYScanPluginOC : NSObject
+
 @end
 
 NS_ASSUME_NONNULL_END

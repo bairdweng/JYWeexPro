@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "660BC93C8030D0712B232DED99A0274A"
-               BlueprintName = "Pods-JYWeexPro"
+               BlueprintIdentifier = "A6419D2C0123B1E3FFC08494C1317921"
+               BlueprintName = "swiftScan"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-JYWeexPro.a">
+               BuildableName = "libswiftScan.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

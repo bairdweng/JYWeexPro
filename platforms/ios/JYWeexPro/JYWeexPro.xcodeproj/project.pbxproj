@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		990557A12189B0B400C6F758 /* JYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990557A02189B0B400C6F758 /* JYMainViewController.swift */; };
-		995043C6218AF9EE0035C928 /* JYSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 995043C5218AF9EE0035C928 /* JYSDK.m */; };
 		995043C9218AFE210035C928 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 995043C8218AFE210035C928 /* libsqlite3.tbd */; };
+		995043D5218B15C10035C928 /* JYScanPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995043D4218B15C10035C928 /* JYScanPlugin.swift */; };
+		995043D8218B173C0035C928 /* JYScanPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 995043D7218B173C0035C928 /* JYScanPlugin.m */; };
 		99745B29217F1844000DA362 /* JYWeexBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99745B28217F1844000DA362 /* JYWeexBaseViewController.swift */; };
 		99745B2F217F1E6C000DA362 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 99745B2E217F1E6C000DA362 /* www */; };
 		99745B33217F20A9000DA362 /* JYJsFileManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99745B32217F20A9000DA362 /* JYJsFileManage.swift */; };
@@ -25,9 +26,10 @@
 		85D130294F5BD0308E75FB1C /* Pods-JYWeexPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYWeexPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYWeexPro/Pods-JYWeexPro.release.xcconfig"; sourceTree = "<group>"; };
 		88DB67C070D13BC7B3126736 /* Pods-JYWeexPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYWeexPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYWeexPro/Pods-JYWeexPro.debug.xcconfig"; sourceTree = "<group>"; };
 		990557A02189B0B400C6F758 /* JYMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYMainViewController.swift; sourceTree = "<group>"; };
-		995043C4218AF9EE0035C928 /* JYSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYSDK.h; sourceTree = "<group>"; };
-		995043C5218AF9EE0035C928 /* JYSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYSDK.m; sourceTree = "<group>"; };
 		995043C8218AFE210035C928 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		995043D4218B15C10035C928 /* JYScanPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYScanPlugin.swift; sourceTree = "<group>"; };
+		995043D6218B173C0035C928 /* JYScanPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYScanPlugin.h; sourceTree = "<group>"; };
+		995043D7218B173C0035C928 /* JYScanPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYScanPlugin.m; sourceTree = "<group>"; };
 		9962D484218219E600F8BC37 /* JYWeexPro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JYWeexPro-Bridging-Header.h"; sourceTree = "<group>"; };
 		99745B28217F1844000DA362 /* JYWeexBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYWeexBaseViewController.swift; sourceTree = "<group>"; };
 		99745B2E217F1E6C000DA362 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
@@ -90,8 +92,9 @@
 		995043C3218AF9D30035C928 /* JYSDK */ = {
 			isa = PBXGroup;
 			children = (
-				995043C4218AF9EE0035C928 /* JYSDK.h */,
-				995043C5218AF9EE0035C928 /* JYSDK.m */,
+				995043D6218B173C0035C928 /* JYScanPlugin.h */,
+				995043D7218B173C0035C928 /* JYScanPlugin.m */,
+				995043D4218B15C10035C928 /* JYScanPlugin.swift */,
 			);
 			path = JYSDK;
 			sourceTree = "<group>";
@@ -269,9 +272,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JYWeexPro/Pods-JYWeexPro-resources.sh",
 				"${PODS_ROOT}/AMap2DMap/MAMapKit.framework/AMap.bundle",
-				"${PODS_ROOT}/ATSDK-Weex/ATSDK.framework/Versions/A/Resources/ATSDK.bundle",
-				"${PODS_ROOT}/ATSDK-Weex/ATSDK.framework/Versions/A/Resources/en.lproj",
-				"${PODS_ROOT}/ATSDK-Weex/ATSDK.framework/Versions/A/Resources/zh-Hans.lproj",
+				"${PODS_ROOT}/ATSDK/ATSDK.framework/Versions/A/Resources/ATSDK.bundle",
+				"${PODS_ROOT}/ATSDK/ATSDK.framework/Versions/A/Resources/en.lproj",
+				"${PODS_ROOT}/ATSDK/ATSDK.framework/Versions/A/Resources/zh-Hans.lproj",
 				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
 				"${PODS_ROOT}/WeexSDK/pre-build/weex-main-jsfm.js",
 				"${PODS_ROOT}/WeexSDK/pre-build/weex-polyfill.js",
@@ -304,8 +307,9 @@
 			files = (
 				99745B33217F20A9000DA362 /* JYJsFileManage.swift in Sources */,
 				99C4E9EE217E2B4500047E2B /* AppDelegate.swift in Sources */,
+				995043D8218B173C0035C928 /* JYScanPlugin.m in Sources */,
+				995043D5218B15C10035C928 /* JYScanPlugin.swift in Sources */,
 				99745B29217F1844000DA362 /* JYWeexBaseViewController.swift in Sources */,
-				995043C6218AF9EE0035C928 /* JYSDK.m in Sources */,
 				990557A12189B0B400C6F758 /* JYMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

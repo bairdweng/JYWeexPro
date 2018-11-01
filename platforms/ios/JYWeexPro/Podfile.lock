@@ -6,15 +6,22 @@ PODS:
     - AMapFoundation (~> 1.4)
   - AMapSearch (6.5.0):
     - AMapFoundation (~> 1.4)
+  - ATSDK-Weex (0.0.1)
   - SnapKit (4.2.0)
-  - WeexSDK (0.18.0.3)
+  - SocketRocket (0.5.1)
+  - WeexSDK (0.19.0)
+  - WXDevtool (0.17.0):
+    - SocketRocket
+    - WeexSDK
 
 DEPENDENCIES:
   - AMap2DMap
   - AMapLocation
   - AMapSearch
+  - ATSDK-Weex
   - SnapKit
   - WeexSDK
+  - WXDevtool
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -22,17 +29,23 @@ SPEC REPOS:
     - AMapFoundation
     - AMapLocation
     - AMapSearch
+    - ATSDK-Weex
     - SnapKit
+    - SocketRocket
     - WeexSDK
+    - WXDevtool
 
 SPEC CHECKSUMS:
   AMap2DMap: cac76bc057de18a1641f34df6b50bf5bc6b23571
   AMapFoundation: 652bd70ba579f48a98bdf0c74d6e62a89a06ca58
   AMapLocation: cf024b53dc03663efb4ea4bcce27d4cce58bb97a
   AMapSearch: c22d8c98e04aad30615834e567781ec1367c4f36
+  ATSDK-Weex: 1b27558f4336d77fb97704d34fc6ad1fd468592c
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  WeexSDK: 173541f2d0042664168b305952398145c0c6039c
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  WeexSDK: 434995ea3d16efbff5f586b68cb2572df9170f58
+  WXDevtool: 5ad7ef59a0dbde17293ef9482c1aa19707d7041c
 
-PODFILE CHECKSUM: e2142a3678d580b45c188e1afa286103acacfe76
+PODFILE CHECKSUM: a5e9dd9bcc2d631c6fd5cfc15e0d790067ebec1c
 
 COCOAPODS: 1.5.3

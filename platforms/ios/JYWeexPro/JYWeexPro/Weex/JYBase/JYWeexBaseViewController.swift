@@ -34,6 +34,7 @@ class JYWeexBaseViewController: UIViewController {
         instance.onCreate = {[weak self] (view) in
             self?.weexView?.removeFromSuperview()
             self?.weexView = view
+            self?.view.addSubview(self!.weexView!)
         }
         instance?.onFailed = {[weak self](error) in
             #if DEBUG

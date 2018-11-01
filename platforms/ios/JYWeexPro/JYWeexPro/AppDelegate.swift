@@ -9,6 +9,8 @@
 import UIKit
 import WeexSDK
 import AMapFoundationKit
+import WXDevtool
+//import ATSDK
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,15 +19,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
         WXAppConfiguration.setAppGroup("")
         WXAppConfiguration.setAppName("")
         WXAppConfiguration.setAppVersion("1.0")
         WXSDKEngine.initSDKEnvironment()
-        AMapServices.shared()?.apiKey = "66ecbc71273de3279ae5e3c25feb5830"
         
+        AMapServices.shared()?.apiKey = "66ecbc71273de3279ae5e3c25feb5830"
+//        WXDevTool.setDebug(true)
+        
+        
+        WXDebugTool.setDebug(true)
+        WXLog.setLogLevel(.WXLogLevelLog)
+//        ATSDK.atAddPlugin()
+        JYSDK.atAddPlugin()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        window?.rootViewController = UINavigationController(rootViewController: JYMainViewController())
+        window?.makeKeyAndVisible()
         return true
     }
-
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

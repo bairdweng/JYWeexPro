@@ -13,6 +13,9 @@ class JYJsFileManage: NSObject {
     //获取完整路径
     func getFullPath(fileName:String)->URL{
         let file = Bundle.main.path(forResource: fileName, ofType: "js", inDirectory: "www")
-        return URL(string: file ?? "")!
+        
+        let ff = String(format: "file://%@", file ?? "")
+        
+        return URL(string: ff)!
     }
 }

@@ -61,11 +61,9 @@ class JYWeexBaseViewController: UIViewController {
     func refreshWeex() {
         initInstance()
     }
-    
     deinit {
         instance?.destroy()
     }
-    
     /*
      // MARK: - Navigation
      
